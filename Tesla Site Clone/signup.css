@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------------------------------  NAVBAR code --------------------------------*/
+.navbar{
+
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 37, 37);
+    z-index: 999;
+    position: sticky;
+
+}
+
+.navbar-right{
+    width:48%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.navbar-right ul li{
+    display: inline-block;
+    list-style: none;
+    
+}
+
+.navbar-right ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+}
+
+.navbar-right a:hover{
+    background-color: aliceblue;
+    color: rgb(14, 14, 14);
+    border-radius: 9px;
+}
+
+.navbar-left{
+    width:50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.navbar-left img{
+    width: 27%;
+    
+}
+
+.dropbtn {
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    color: rgb(44, 44, 44);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(233, 233, 233);
+    background-color: #252525;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #dbdbdb;
+    color:rgb(24, 24, 24);
+    
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {
+
+    background-color: aliceblue;
+    color: rgb(22, 22, 22);
+    /* border-radius: 9px; */
+
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+.container{
+
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .bar{
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgb(196, 231, 255);
+} */
+form{
+  width: 880px;
+  height: 540px;
+  box-shadow:0 2px 2px  rgba(0, 0, 0, 0.603);
+  background-color: rgba(247, 247, 247, 0.904);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-section{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+
+}
+.left-form{
+  width: 50%;
+  height: 100%;
+  /* background-color: aquamarine; */
+}
+
+.heading{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.heading h1{
+  margin-top: 17px;
+  margin-bottom: 10px ;
+  font-size: 30px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.group{
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+form a{
+  /* text-decoration: none; */
+  color: rgb(0, 82, 102);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+input[type ="text"], input[type ="email"], input[type="password"]{
+  padding: 10px;
+  width: 98%;
+  border-radius: 6px;
+  border: 2px solid #dbdbdb;
+}
+.submit{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+input[type="submit"]{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #dbdbdb;
+  padding: 10px 60px;
+  background-color: #252525;
+  border-radius: 10px;
+  
+}
+
+.country{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    font-size: small;
+    margin-top: 35px;
+    gap: 133px;
+}
+
+select{
+    width: 50%;
+    padding: 5px;
+    margin-right: 14px;
+    border-radius: 5px;
+    border:2px solid #dddddd;
+}
+
+/* --------------------------------------------------- Right Side Of Form --------------------- */
+
+.right-form{
+  width: 50%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rgroup{
+  padding-bottom: 17px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right-form  label{
+  padding-bottom: 5px;
+}
+
+.radio-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.check-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.photos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.file-upload{
+  
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="file"]{
+  
+  /* border: none; */
+  
+  /* color: #fff; */
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 10px;
+  padding: 10px;
+  transition: background .2s ease-in-out;
+}
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #3a5183;
+  padding: 7px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+/* input[type="radio"]{
+  padding: 20px;
+
+} */
